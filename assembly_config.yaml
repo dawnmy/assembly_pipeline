@@ -1,0 +1,25 @@
+# ---- project ----
+dataset: gut_isolates
+out_dir: /path/to/out
+threads: 40
+
+# Absolute path is safest
+sample_list_file: /abs/path/to/samples.tsv
+
+# ---- conda env specs ----
+# If assembly.yaml is in the same dir as Snakefile, just use the name
+assembly_env: assembly_env.yaml
+
+# ---- container image for mhm2 ----
+# MUST BE a valid path or URI
+mhm2_image: /path/to/images/mhm2.sif
+
+# ---- fastp options ----
+fastp:
+  extra: "-5 -3 -q 20 --cut_mean_quality 20 -l 70"
+
+# ---- mhm2 options ----
+mhm2:
+  ranks: 20
+  nodes: 1
+  extra_mhm2: ""

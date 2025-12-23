@@ -23,7 +23,8 @@ It is designed for shared computing environments (no root required) and supports
 
 - **MetaHipMer2 (MHM2)**
   A high-performance, scalable assembler optimized for HPC systems, executed via an Apptainer/Singularity container.
-
+  The container image file is located in the `containers` directory in this repo.
+  
 ---
 
 ## 🔄 Workflow Overview
@@ -56,8 +57,16 @@ For each isolate sample, the pipeline performs:
 
 A tab-separated file with **three columns**:
 
+- Paired end
+
 ```text
 sample_id    /path/to/read1.fastq.gz    /path/to/read2.fastq.gz
+```
+
+- Single end
+
+```text
+sample_id    /path/to/read.fastq.gz
 ```
 
 ### 2️⃣ Configuration file (assembly_config.yaml)
