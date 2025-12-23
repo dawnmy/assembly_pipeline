@@ -23,7 +23,7 @@ It is designed for shared computing environments (no root required) and supports
 
 - **MetaHipMer2 (MHM2)**
   A high-performance, scalable assembler optimized for HPC systems, executed via an Apptainer/Singularity container.
-  The container image file is located in the `containers` directory in this repo.
+  The container image file can be downloaded from https://doi.org/10.5281/zenodo.18033445
   
 ---
 
